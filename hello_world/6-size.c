@@ -5,8 +5,8 @@
  * Return:0
 */
 
- int main(void)
- {
+int main(void)
+{
 	 char c;
 	 int i;
 	 long int li;
@@ -19,4 +19,4 @@
 	 printf("Size of a long long int: %i byte(s)\n", sizeof(lli));
 	 printf("Size of a float: %i byte(s)\n", sizeof(f));
 	 return(0);
- }
+}
