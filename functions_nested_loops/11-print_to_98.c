@@ -1,13 +1,39 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * add - Adds two integers and returns the result.
- * @num1: First number
- * @num2: Second number
- * Return: result
+ * print_to_98 - Prints all natural numbers from `n` to `98`,
+ * followed by a new line
+ * @n: Starting number to print til 98
  */
 
-int add(int num1, int num2)
+void print_to_98(int n)
 {
-	return (num1 + num2);
+	if (n <= 98)
+	{
+		while (n <= 98)
+		{
+			printf("%i", n);
+			if (n < 98)
+			{
+				printf(", ");
+			}
+
+			n++;
+		}
+	}
+	else
+	{
+		while (n >= 98)
+		{
+			printf("%i", n);
+			if (n > 98)
+			{
+				printf(", ");
+			}
+
+			n--;
+		}
+	}
+	printf("\n");
 }
