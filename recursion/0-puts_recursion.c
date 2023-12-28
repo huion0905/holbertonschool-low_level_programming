@@ -1,13 +1,17 @@
+#include "main.h"
 
 /**
- * reset_to_98 - Updates the value it points to to 98.
- * @n: integer type pointer as parameter
- * Description: Function that takes a pointer to an int as parameter,
- * and updates the value it points to to 98.
- * Return: Nothing
+ * _puts_recursion - Prints a string, followed by a new line.
+ * @s: string as parameter
  */
 
-void reset_to_98(int *n)
+void _puts_recursion(char *s)
 {
-	*n = 98;
+	if (*s == '\0')
+	{
+		_putchar('\n');
+		return;
+	}
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
